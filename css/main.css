@@ -43,4 +43,9 @@
       border: 0.5px solid grey;
   }
 
+  .button:hover {
+      background-color: white;
+      color: grey;
+  }
+
   
