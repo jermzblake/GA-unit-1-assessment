@@ -15,9 +15,17 @@ plusButton.addEventListener('click', addInput)
 minusButton.addEventListener('click', subtractInput)
 
 //functions
+function checkInteger(){
+    if(counter < 0){
+        counterDisplay.style.color = "red";
+    }else {
+        counterDisplay.style.color = "black"
+    }
+}
+
 function addInput(){
     counter = (counter) + parseInt(inputField.value);
-    console.log(counter)
+    checkInteger()
      counterDisplay.textContent = counter;
  
 }
@@ -25,7 +33,7 @@ function addInput(){
 
 function subtractInput(){
     counter = (counter) - parseInt(inputField.value);
-    console.log(counter)
+    checkInteger()
      counterDisplay.textContent = counter;
  
 }
